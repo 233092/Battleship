@@ -4,13 +4,15 @@
 #include <vector>
 
 #include "Mast.h"
+#include "Ship.h"
+#include "BoardField.h"
 
 class Board
 {
     public:
         Board(int size);
         virtual ~Board();
-        std::vector<std::vector<Mast> > board;
+        std::vector<std::vector<BoardField> > board;
 
     private:
         int size;

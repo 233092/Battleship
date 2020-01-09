@@ -13,6 +13,7 @@ class Ship
         void addMast(Mast* singleMast);
 
     private:
+        int shipSize;
         std::vector<Mast*> mastsList;
 };
 

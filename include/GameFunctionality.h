@@ -2,14 +2,15 @@
 #define GAME_FUNCTIONALITY_H
 
 #include "Board.h"
+#include "Ship.h"
 
 class GameFunctionality {
     public:
         GameFunctionality();
         virtual ~GameFunctionality();
 
-        void addShip(Board board, int size);
-        void hitField(int x, int y);
+        void addShip(Board* mainBoard, Ship* ship, int x, int y);
+        void hitField(Board* board, int x, int y);
 
     private:
 };

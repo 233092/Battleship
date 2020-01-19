@@ -1,11 +1,7 @@
 #include "Statistics.h"
 
-Statistics::Statistics()
-{
-    //ctor
+Statistics::Statistics() : shotsTaken(0), accurateShotsTaken(0),
+    numOfShips(0), numOfShipsSunked(0) {
 }
 
-Statistics::~Statistics()
-{
-    //dtor
-}
+

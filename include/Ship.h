@@ -5,16 +5,16 @@
 
 #include "Mast.h"
 
-class Ship
-{
+class Ship {
     public:
-        Ship();
-        virtual ~Ship();
-        void addMast(Mast* singleMast);
+        Ship(int shipSize, bool isHorizontal);
+        int getSize();
+        bool getIsHorizontal();
+        std::vector<Mast*> mastsList;
 
     private:
         int shipSize;
-        std::vector<Mast*> mastsList;
+        bool isHorizontal;
 };
 
 #endif // SHIP_H

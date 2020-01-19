@@ -1,11 +1,14 @@
 #include "Ship.h"
 
-Ship::Ship() {
+Ship::Ship(int shipSize, bool isHorizontal) {
+    this->shipSize = shipSize;
+    this->isHorizontal = isHorizontal;
 }
 
-Ship::~Ship() {
+int Ship::getSize() {
+    return shipSize;
 }
 
-void Ship::addMast(Mast* singleMast) {
-    mastsList.push_back(singleMast);
+bool Ship::getIsHorizontal() {
+    return isHorizontal;
 }

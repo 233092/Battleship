@@ -5,18 +5,16 @@
 
 #include "Mast.h"
 #include "Ship.h"
-#include "BoardField.h"
 
-class Board
-{
+class Board {
     public:
         Board(int size);
-        virtual ~Board();
-        std::vector<std::vector<BoardField> > board;
+        std::vector<std::vector<Mast> > boardMasts;
+        std::vector<Ship*> shipsList;
 
     private:
         int size;
-        std::vector<Ship> shipsList;
+        //std::vector<Ship> shipsList;
 };
 
 #endif // BOARD_H

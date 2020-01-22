@@ -7,7 +7,7 @@ void Mast::destroy() {
     destroyed = true;
 }
 
-bool Mast::getIsDestroyed() {
+bool Mast::isDestroyed() {
     return destroyed;
 }
 

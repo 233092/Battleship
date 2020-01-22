@@ -7,7 +7,7 @@ class Mast {
     public:
         Mast();
         void destroy();
-        bool getIsDestroyed();
+        bool isDestroyed();
         void setOwner(Ship* owner);
         Ship* getOwner();
 

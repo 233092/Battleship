@@ -6,13 +6,9 @@
 
 class GameFunctionality {
     public:
-        GameFunctionality();
-        virtual ~GameFunctionality();
-
-        void addShip(Board* mainBoard, Ship* ship, int x, int y);
-        void hitField(Board* board, int x, int y);
-
-    private:
+        GameFunctionality() = default;
+        void addShip(Board* gameBoard, int shipSize, bool isHorizontal, int x, int y);
+        void hitField(Board* gameBoard, int x, int y);
 };
 
 #endif // GAME_FUNCTIONALITY_H

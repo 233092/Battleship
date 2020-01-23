@@ -10,6 +10,9 @@
 class Board {
     public:
         Board(int size);
+        unsigned int getSize();
+        unsigned int getNumOfShips();
+
         std::vector<std::vector<Mast> > boardMasts;
         std::vector<Ship> shipsList;
         Statistics gameStatistics;

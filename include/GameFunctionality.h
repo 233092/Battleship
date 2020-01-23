@@ -7,7 +7,7 @@
 class GameFunctionality {
     public:
         GameFunctionality() = default;
-        void addShip(Board* gameBoard, int shipSize, bool isHorizontal, int x, int y);
+        void addShip(Board* gameBoard, unsigned int shipSize, bool isHorizontal, int x, int y);
         void hitField(Board* gameBoard, int x, int y);
 };
 
